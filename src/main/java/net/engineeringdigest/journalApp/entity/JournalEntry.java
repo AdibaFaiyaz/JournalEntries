@@ -1,6 +1,7 @@
 package net.engineeringdigest.journalApp.entity;
 import java.time.ZoneId;
 
+import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.cglib.core.Local;
 import org.springframework.data.annotation.Id;
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Document(collection = "journal_entries")
+@Data
 public class JournalEntry {
 
     @Id
